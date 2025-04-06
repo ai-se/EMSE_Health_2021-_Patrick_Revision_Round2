@@ -808,13 +808,12 @@ Prior to this work, the experience was that such optimization can be very slow a
 for 1600 projects is 1600 tiny problems (13 columns by 60 rows, one for each month we sampled a project). Hence there is no need here for elaborate hyperparameter optimization\footnote{e.g. not the 100 generations over 100 individuals recommended by Holland et a.~\cite{holland1992genetic}}
 \ei
  
-
 Holland, John H. “Genetic Algorithms.” Scientific American, vol. 267, no. 1, 1992, pp. 66–73. JSTOR, http://www.jstor.org/stable/24939139. Accessed 10 Dec. 2021. 
 
 
 The rest of this paper is organized as follows:
 Section~\ref{sect:backg} introduces the current problems of open-source software development, the background of software project health, the related work on software analytics of open-source projects, and the difference between our work and prior studies.
-After that, Section~\ref{sect:empir} describes the research questions, explain our open-source project data mining, model constructions and the experiment setup details. 
+After that, Section~\ref{sect:empir} describes the researc:wh questions, explain our open-source project data mining, model constructions and the experiment setup details. 
 Section~\ref{sect:resul} presents the experimental results and answers the research questions. 
 This is followed by Section~\ref{sect:discu} and Section~\ref{sect:threa}, which discuss the findings from the experiment and the potential threats in the study. 
 Finally, the conclusions and future works are given in Section~\ref{sect:concl}.
@@ -1204,7 +1203,6 @@ Also, since DE has shown good performance comparing other baselines like grid se
 \vspace{-0.3cm}
 \end{figure}
 
-
 The pseudocode of DE algorithm is shown in \fig{pseudo_DE}. The premise of that code is that the best way to mutate the existing tunings is to extrapolate between current solutions (stored in the {\em frontier} list). Three solutions $x, y, z$ are selected at random from the {\em frontier}. For each tuning parameter $j$, at some probability $cf$ (crossover probability), DE  replaces the old tuning $x_j$ with {\em new}  where
 \mbox{$\mathit{new}_j = x_j + f \times (y_j - z_j)$}
 where $f$ (differential weight) is a parameter controlling differential weight.
@@ -1330,12 +1328,12 @@ We compare the experimental results of each method on all 1,159 open-source proj
 \end{blockquote}
 
 
-\respto{2G3} \BLUE Just to say the obvious, we only show here that DECART performs best
-compared to the methods we took from prior work on project health (see \table{xxx}).
-What that is paper has not done is survey all possible methods (since that study
-would be much larger than any single paper).  That said, we say Answer~3 is a significant result since it should serve to inspire   much future work on finding yet better methods
-for optimizing health indicators, 
-\BLACK
+ \respto{2G3} \BLUE Just to say the obvious, we only show here that DECART performs best
+ compared to the methods we took from prior work on project health (see \tbl{xxx}).
+ What that is paper has not done is survey all possible methods (since that study
+ would be much larger than any single paper).  That said, we say Answer~3 is a significant result since it should serve to inspire   much future work on finding yet better methods
+ for optimizing health indicators, 
+ \BLACK
 
 \subsection{Data Collection}
 \label{sect:data_collect}
